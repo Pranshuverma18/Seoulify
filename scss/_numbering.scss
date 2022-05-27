@@ -1,0 +1,85 @@
+.numbering {
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translate(0%, -50%);
+	display: grid;
+	gap: 1em;
+
+	&__link {
+		color: #ffffff;
+		font-size: 26px;
+		font-weight: bold;
+		position: relative;
+	}
+
+	&__link::before {
+		right: -40px;
+		content: "";
+		border-bottom: 5px solid white;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		transition: opacity 0.35s, transform 0.35s;
+		opacity: 0;
+	}
+
+	&__link:hover:before {
+		opacity: 1;
+	}
+
+	@include xx {
+
+		&__link {
+			font-size: 22px;
+		}
+
+    &__link::before {
+      right: -29px;
+      width: 95%;
+    }
+	}
+
+	@include xl {
+
+		&__link {
+			font-size: 19px;
+		}
+
+    &__link::before {
+			right: -20px;
+			width: 71%;
+    }
+	}
+
+	@include xl {
+		gap: 0.55em;
+	}
+
+	@include md {
+
+		&__link {
+			font-size: 16px;
+		}
+
+    &__link::before {
+			right: -14px;
+			width: 65%;
+			border-bottom: 3px solid;
+    }
+	}
+
+	@include sm {
+		gap: 0.15em;
+
+		&__link {
+			font-size: 12px;
+		}
+
+    &__link::before {
+			right: -8px;
+			width: 44%;
+			border-bottom: 2px solid;
+    }
+	}
+}

@@ -1,0 +1,181 @@
+.crousel {
+  padding: 120px 0px;
+
+  &__heading {
+    text-align: center;
+    font-family: 'open sans';
+    margin-bottom: 78px;
+    color: #32353C;
+
+    h2 {
+      font-size: 38px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 26px;
+      margin-left: 10px;
+    }
+  }
+
+  &__follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &--style::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      background: linear-gradient(90deg, #fff, transparent);
+      width: 3%;
+      height: 100%;
+    }
+    &--style::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      background: linear-gradient(270deg, #fff, transparent);
+      width: 3%;
+      height: 100%;
+      top: 0;
+    }
+  }
+
+  &__box {
+    display: flex;
+    gap: 2em;
+    overflow-y: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+    
+    img {
+      width: 100%;
+      cursor: grab;
+    }
+  }
+
+  &__box::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include xx {
+    padding: 100px 0px;
+
+    &__heading {
+      margin-bottom: 58px;
+  
+      h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 21px;
+        margin-left: 10px;
+      }
+    }
+  
+    &__box {
+      gap: 1em;
+    }
+  }
+
+  @include xl {
+    padding: 80px 0px;
+
+    &__heading {
+      margin-bottom: 48px;
+  
+      h2 {
+        font-size: 28px;
+      }
+  
+      p {
+        font-size: 19px;
+      }
+    }
+  } 
+
+  @include lg {
+    padding: 60px 0px;
+
+    &__heading {
+      margin-bottom: 38px;
+  
+      h2 {
+        font-size: 26px;
+      }
+  
+      p {
+        font-size: 17px;
+      }
+    }
+
+    &__follow {
+
+      img {
+        max-width:25px;
+      }
+    }
+  }
+
+  @include md {
+    padding: 50px 0px;
+
+    &__heading {
+  
+      h2 {
+        font-size: 26px;
+      }
+  
+      p {
+        font-size: 17px;
+      }
+    }
+
+    &__follow {
+
+      img {
+        max-width: 20px;
+      }
+    }
+  }
+
+    @include sm {
+    padding: 40px 0px;
+
+    &__heading {
+      margin-bottom: 28px;
+  
+      h2 {
+        font-size: 19px;
+      }
+  
+      p {
+        font-size: 14px;
+        margin-left: 5px;
+      }
+    }
+
+    &__box {
+
+      img {
+        width: 50%;
+      }
+    }
+
+    &__follow {
+
+      img {
+        max-width: 16px;
+      }
+    }
+  }
+}

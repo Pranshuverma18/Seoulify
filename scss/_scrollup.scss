@@ -1,0 +1,19 @@
+a.scrollUp {
+  background: #b79b6c none repeat scroll 0 0;
+  border: 1px solid #b79b6c;
+  border-radius: 5px;
+  color: #ffffff;
+  bottom: 140px;
+  padding: 10px 12px;
+  position: fixed;
+  right: 32px;
+  text-align: center;
+  z-index: 999;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+a.scrollUp:hover {
+  background: transparent;
+  border: 1px solid #b79b6c;
+  color: #b79b6c;
+}

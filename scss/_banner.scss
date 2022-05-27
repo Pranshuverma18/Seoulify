@@ -1,0 +1,445 @@
+.banner {
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-family: 'open sans';
+    position: relative;
+  }
+
+  &__text {
+    text-align: center;
+    position: relative;
+
+    img {
+      width: 45%;
+    }
+  }
+
+  &__fulltext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-108%, -50%);
+    text-align: left;
+    width: 30%;
+
+    p {
+      color: #b79b6c;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #32353C;
+    }
+  }
+  
+  &__btn {
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+
+    a {
+      padding-right: 50px;
+    }
+    
+    a::before {
+      content: "";
+      position: absolute;
+      background: url(../img/arrowright.png) no-repeat;
+      background-size: contain;
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      right: 20%;
+      margin-top: 2px;
+      transform: translate(-100% , -50%);
+      transition: all 0.4s cubic-bezier(0.47, 0, 0.75, 0.72) 0s;
+    }
+
+    a:hover:before {
+      right: 17%;
+      margin-top: 2px;
+      transform: translate(-50% , -50%);
+      transition: ease 0s, transform 0.35s;
+    }
+  
+    img {
+      max-width: 8px;
+      margin-left: 15px;
+      margin-top: 3px;
+    }
+  }
+
+  &__image__container {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__playbtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-46%, -5%);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+
+    img {
+      max-width: 100px;
+    }
+  }
+
+
+  &__details {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    padding: 0px 40px;
+    font-family: 'open sans';
+    color: #32353C;
+
+    p {
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 20px;
+    }
+  }
+
+  &__scrolldown {
+    position: absolute;
+    left: 48%;
+    bottom: 5%;
+    transform: translate(-50% , 0%);
+  }
+
+  @include xx {
+
+    &__text {
+  
+      img {
+        width: 35%;
+      }
+    }
+
+    &__fulltext {
+      width: 33%;
+  
+      p {
+        font-size: 14px;
+        margin-bottom: 18px;
+      }
+  
+      h2 {
+        font-size: 27px;
+        margin-bottom: 18px;
+      }
+    }
+
+    &__btn {
+      font-size: 17px;
+
+      a {
+        padding-right: 20px;
+      }
+      
+      a::before {
+        right: 10%;
+        width: 12px;
+        height: 12px;
+      }
+  
+      a:hover:before {
+        right: 5%;
+      }
+    
+      img {
+        max-width: 7px;
+        margin-left: 14px;
+        margin-top: 6px;
+      }
+    }
+  
+    &__playbtn {
+      font-size: 19px;
+  
+      img {
+        max-width: 85px;
+      }
+    }
+
+    &__details {
+      width: 92%;
+      padding: 40px 0px;
+  
+      p {
+        font-size: 19px;
+        margin-left: 15px
+      }
+
+      img {
+        max-width: 26px;
+      }
+    }
+  
+    &__scrolldown {
+
+      img {
+        max-width: 75px;
+      }
+    }
+  }
+
+  @include xl {
+
+    &__fulltext {
+      width: 36%;
+  
+      p {
+        font-size: 13px;
+        margin-bottom: 16px;
+      }
+  
+      h2 {
+        font-size: 23px;
+        margin-bottom: 16px;
+      }
+    }
+
+    &__btn {
+      font-size: 16px;
+      
+      a::before {
+        right: 8%;
+        width: 11px;
+        height: 11px;
+      }
+  
+      a:hover:before {
+        right: 4%;
+      }
+    }
+
+    &__playbtn {
+      font-size: 17px;
+  
+      img {
+        max-width: 75px;
+      }
+    }
+
+    &__scrolldown {
+      
+      img{
+        max-width: 65px;
+      }
+    }
+
+    &__details {
+      padding: 30px 0px;
+      width: 94%;
+  
+      p {
+        font-size: 16px;
+      }
+
+      img {
+        max-width: 23px;
+      }
+    }
+  }
+
+  @include lg {
+
+    &__fulltext {
+      width: 42%;
+      transform: translate(-100%, -50%);
+  
+      p {
+        font-size: 12px;
+        margin-bottom: 16px;
+      }
+  
+      h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+    }
+
+    &__btn{
+      font-size: 14px;
+
+      a::before {
+        right: 15%;
+        width: 10px;
+        height: 10px;
+      }
+
+      a:hover:before {
+        right: 8%;
+      }
+    }
+
+    &__playbtn {
+      font-size: 15px;
+  
+      img {
+        max-width: 65px;
+      }
+    }
+
+    &__scrolldown {
+
+      img {
+        max-width: 55px;
+      }
+    }
+
+    &__details {
+      padding: 20px 0px;
+  
+      p {
+        font-size: 15px;
+        margin-left: 10px
+      }
+
+      img {
+        max-width: 20px;
+      }
+    }
+  }
+
+  @include md {
+
+    &__fulltext {
+      width: 51%;
+      transform: translate(-90%, -50%);
+  
+      p {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 21px;
+      }
+    }
+
+    &__btn{
+      font-size: 14px;
+
+      a::before {
+        right: 6%;
+      }
+
+      a:hover:before {
+        right: 4%;
+      }
+    }
+
+    &__playbtn {
+      font-size: 12px;
+  
+      img {
+        max-width: 50px;
+      }
+    }
+
+    &__scrolldown {
+
+      img {
+        max-width: 45px;
+      }
+    }
+
+    &__details {
+      gap: 1em;
+      padding: 20px;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+  
+      p {
+        font-size: 17px;
+        margin: 0;
+      }
+      
+      img{
+        max-width: 30px;
+      }
+    }
+  }
+
+  @include sm {
+
+    &__text {
+  
+      img {
+        display: none;
+      }
+    }
+
+    &__fulltext {
+      width: 76%;
+      transform: translate(-60%, -50%);
+  
+      p {
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+
+      h2 {
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+    }
+
+    &__btn{
+      font-size: 13px;
+
+      a::before {
+        right: 2%;
+        width: 9px;
+        height: 9px;
+      }
+
+      a:hover:before {
+        right: 0%;
+      }
+    }
+
+    &__playbtn {
+      font-size: 9px;
+  
+      img {
+        max-width: 35px;
+      }
+    }
+
+    &__scrolldown {
+      
+      img {
+        max-width: 30px;
+      }
+    }
+
+    &__details {
+      padding: 20px 10px;
+  
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

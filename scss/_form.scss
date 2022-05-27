@@ -1,0 +1,331 @@
+.form {
+  background: url(../img/intouch.png) no-repeat;
+  background-size: cover;
+  padding: 146px 0px;
+  font-family: 'open sans';
+
+  &__box {
+    text-align: center;
+    width: 58%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 104px 187px;
+    color: #32353C;
+
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__text {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+
+  &__mail__container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+
+    &--footer {
+      width: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  &__mail {
+    padding: 21px 25px;
+    width: 100%;
+    font-size: 24px;
+
+    &--footers {
+      padding: 21px 13px;
+      width: 100%;
+      font-size: 22px;
+    }
+  }
+
+  &__btn {
+    padding: 21px 40px;
+    font-size: 26px;
+    background: #32353C;
+    color: #ffffff;
+
+    &--fbtns {
+      padding: 21px 14px;
+      box-shadow: 1px 1px 16px -8px #000000;
+    }
+  }
+
+
+  &__text1 {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+
+  @include xx {
+    padding: 116px 0px;
+
+    &__box {
+      width: 70%;
+      padding: 84px 121px;
+  
+      h2 {
+        font-size: 32px;
+        margin-bottom: 22px;
+      }
+    }
+
+    &__text {
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+
+    &__mail__container {
+
+      &--footer {
+        margin-bottom: 30px;
+        flex-direction: column;
+        gap: 1em;
+      }
+    }
+
+    &__mail {
+      padding: 17px 20px;
+      font-size: 20px;
+
+      &--footers {
+        padding: 17px 13px;
+        font-size: 15px;
+      }
+    }
+
+    &__btn {
+      padding: 17px 30px;
+      font-size: 22px;
+      background: #32353C;
+      color: #ffffff;
+      border: none;
+
+      &--fbtns {
+        padding: 17px 13px;
+        font-size: 15px;
+      }
+    }
+
+    &__text1 {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+  }
+
+  @include xl {
+    padding: 96px 0px;
+
+    &__box {
+      padding: 70px 90px;
+  
+      h2 {
+        font-size: 28px;
+        margin-bottom: 18px;
+      }
+    }
+
+    &__text {
+      font-size: 19px;
+      margin-bottom: 35px;
+    }
+
+    &__mail__container {
+
+      &--footer {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__mail {
+      font-size: 18px;
+      padding: 15px 18px;
+
+      &--footers {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+    }
+
+    &__btn {
+      padding: 15px 18px;
+      font-size: 18px;
+
+      &--fbtns {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+    }
+
+    &__text1 {
+      font-size: 19px;
+      margin-top: 35px;
+    }
+  }
+
+  @include lg {
+    padding: 86px 0px;
+
+    &__box {
+      width: 60%;
+      padding: 80px 70px;
+  
+      h2 {
+        font-size: 26px;
+        margin-bottom: 14px;
+      }
+    }
+
+    &__text {
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    &__mail__container {
+
+      &--footer {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__mail {
+      font-size: 17px;
+
+      &--footers {
+        padding: 15px 10px;
+        width: 80%;
+        font-size: 14px;
+      }
+    }
+
+    &__btn {
+      font-size: 17px;
+
+      &--fbtns {
+        padding: 15px 10px;
+        font-size: 14px;
+        width: 80%;
+      }
+    }
+
+    &__text1 {
+      font-size: 17px;
+      margin-top: 30px;
+    }
+  }
+
+  @include md {
+    padding: 66px 0px;
+
+    &__box {
+      width: 75%;
+      padding: 70px 50px;
+  
+      h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    &__mail__container {
+      flex-direction: column;
+      gap: 1em;
+
+      &--footer {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__mail {
+      font-size: 15px;
+      padding: 10px 14px;
+      text-align: center;
+
+      &--footers {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+    }
+
+    &__btn {
+      font-size: 15px;
+      padding: 10px 14px;
+
+      &--fbtns {
+        padding: 15px 10px;
+        font-size: 14px;
+      }
+    }
+
+    &__text1 {
+      font-size: 18px;
+      margin-top: 25px;
+    }
+  }
+
+  @include sm {
+    padding: 46px 0px;
+
+    &__box {
+      width: 90%;
+      padding: 50px 25px;
+  
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    &__mail__container {
+
+      &--footer {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__mail {
+
+      &--footers {
+        padding: 15px 10px;
+        font-size: 14px;
+        width: 90%;
+      }
+    }
+
+    &__btn {
+
+      &--fbtns {
+        padding: 15px 10px;
+        font-size: 14px;
+        width: 90%;
+      }
+    }
+
+    &__text1 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+}

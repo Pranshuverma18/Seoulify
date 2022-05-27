@@ -1,0 +1,23 @@
+.payment {
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+    margin-right: 15px;
+
+    &--last {
+      margin: 0;
+    }
+  }
+
+  @include xl {
+
+    &__item {
+      margin-right: 10px;
+  
+      &--last{
+        margin: 0;
+      }
+    }
+  }
+}

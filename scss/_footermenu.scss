@@ -1,0 +1,73 @@
+.fmenu {
+  list-style: none;
+
+  &__item {
+    margin-bottom: 20px;
+
+    &--last{
+      margin: 0;
+    }
+  }
+
+  &__link {
+    font-size: 25px;
+    color: #6F6F6F;
+    font-weight: 600;
+  }
+
+  &__link:hover {
+    color: #B79B6C;
+  }
+
+  @include xx {
+
+    &__item {
+      margin-bottom: 15px;
+  
+      &--last{
+        margin: 0;
+      }
+    }
+  
+    &__link {
+      font-size: 19px;
+    }
+  }
+
+  @include xl {
+
+    &__item {
+      margin-bottom: 10px;
+  
+      &--last{
+        margin: 0;
+      }
+    }
+  
+    &__link {
+      font-size: 16px;
+    }
+  }
+
+  @include lg {
+
+    &__item {
+      margin-bottom: 10px;
+  
+      &--last{
+        margin: 0;
+      }
+    }
+  
+    &__link {
+      font-size: 18px;
+    }
+  }
+
+  @include sm {
+  
+    &__link {
+      font-size: 16px;
+    }
+  }
+}

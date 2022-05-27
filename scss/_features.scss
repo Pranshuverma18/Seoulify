@@ -1,0 +1,128 @@
+.feature {
+  padding: 60px 0px;
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__content {
+    font-family: 'open sans';
+    padding: 70px 0px;
+    position: relative;
+    color: #32353C;
+
+    &--style::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 118px;
+      background: #d4d4d4;
+      left: 100%;
+      top: 34%;
+    }
+
+    img {
+      margin-bottom: 44px;
+    }
+
+    h2 {
+      font-size: 34px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 26px;
+    }
+  }
+
+  @include xx {
+    padding: 50px 0px;
+
+    &__content {
+      padding: 70px 0px;
+
+      img {
+        margin-bottom: 22px;
+        max-width: 60px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+
+  @include xl {
+
+    &__content {
+      padding: 60px 0px;
+
+      img {
+        margin-bottom: 20px;
+        max-width: 50px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  @include lg {
+    padding: 40px 0px;
+
+    &__content {
+      padding: 50px 0px;
+
+      img {
+        margin-bottom: 22px;
+        max-width: 45px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @include md {
+
+    &__box {
+      grid-template-columns: 1fr;
+    }
+
+    &__content {
+      padding: 20px 0px;
+
+      &--style::after {
+        display: none;
+      }
+    }
+  }
+
+  @include sm {
+
+    &__content {
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

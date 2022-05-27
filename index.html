@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cart.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <title>Seoulify</title>
+</head>
+<body>
+  <!-- loader start -->
+  <div class="loaderbox">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- loader close -->
+
+  <!-- header start -->
+  <header class="header">
+    <div class="fluidcontainer">
+      <div class="header__inner">
+        <div class="header__langchange">
+          <div class="header__dropbtn__container">
+            <button class="header__dropbtn">English<img src="img/arrowdown.png" alt=""></button>
+            <div class="header__dropcontent">
+              <a href="javascript:void(0)">Hindi</a>
+              <a href="javascript:void(0)">Spanish</a>
+              <a href="javascript:void(0)">Russian</a>
+            </div>
+          </div>
+          <img class="header__search" src="img/search.png" alt="">
+        </div>
+        <div class="header__menu__container">
+          <ul class="menu">
+            <li class="menu__item"><a href="index.html" class="menu__link menu__link--style">Home</a></li>
+            <li class="menu__item"><a href="category.html" class="menu__link menu__link--style">Category<sup>10</sup></a></li>
+            <li class="menu__item"><a href="#newproducts" class="menu__link menu__link--style">New arrival<sup>44</sup></a></li>
+            <li class="menu__item"><a href="index.html" class="menu__link"><img src="img/logo.png" alt=""></a></li>
+            <li class="menu__item"><a href="tops.html" class="menu__link menu__link--style">Tops<sup>65</sup></a></li>
+            <li class="menu__item"><a href="coats.html" class="menu__link menu__link--style">Coats<sup>28</sup></a></li>
+            <li class="menu__item menu__item--last"><a href="eye.html" class="menu__link menu__link--style">Eyewear<sup>19</sup></a></li>
+          </ul>
+        </div>
+        <div class="addtocart">
+          <a href="javascript:void(0)">
+            <svg addtocart__like xmlns="http://www.w3.org/2000/svg" width="21.949" height="21.105" viewBox="0 0 21.949 21.105">
+              <path id="ios-heart-empty" d="M64.04,56h-.053a6,6,0,0,0-5.012,2.744A6,6,0,0,0,53.962,56h-.053A5.965,5.965,0,0,0,48,61.962a12.843,12.843,0,0,0,2.522,7A44.2,44.2,0,0,0,58.975,77.1a44.2,44.2,0,0,0,8.452-8.141,12.843,12.843,0,0,0,2.522-7A5.965,5.965,0,0,0,64.04,56Zm2.195,12.093a40.469,40.469,0,0,1-7.26,7.155,40.529,40.529,0,0,1-7.26-7.16,11.383,11.383,0,0,1-2.237-6.126,4.477,4.477,0,0,1,4.443-4.48h.047a4.424,4.424,0,0,1,2.169.57,4.61,4.61,0,0,1,1.6,1.5,1.482,1.482,0,0,0,2.48,0,4.656,4.656,0,0,1,1.6-1.5,4.423,4.423,0,0,1,2.169-.57h.047a4.477,4.477,0,0,1,4.443,4.48A11.527,11.527,0,0,1,66.235,68.093Z" transform="translate(-48 -56)"/>
+            </svg>
+          </a>
+          <h2>0.00$</h2>
+          <div class="addtoccart">
+            <div class="cart-icon-top"></div>
+            <div class="cart-icon-bottom"></div>
+          </div>
+        </div>
+      </div> 
+    </div>   
+  </header>
+  <!-- header close -->
+
+  <!-- banner start -->
+  <section class="banner" id="home">
+    <div class="banner__content">
+      <div class="banner__text">
+        <img src="img/handbag.png" alt="">
+        <div class="banner__fulltext">
+          <p>03. FW 2018 LIMITED EDITION</p>
+          <h2>FW 2018 limited edition</h2>
+          <div class="banner__btn">
+            <a href="category.html">Shop the Category</a>
+          </div>
+        </div>
+      </div>
+      <div class="banner__image__container">
+        <img src="img/banner.png" alt="">
+        <div class="banner__playbtn">
+          <a href="https://www.youtube.com/watch?v=En6i5bPEGco&ab_channel=EasyEnglish"><img src="img/playbtn.png" alt=""></a>
+          <h2>Watch Promo</h2>
+        </div>
+      </div>
+      <a href="#form" class="banner__scrolldown" data-aos="fade-down"  data-aos-duration="600" data-aos-easing="ease-in-sine" data-aos-delay="200"><img src="img/scrolldown.png" alt=""></a>
+      <div class="numbering">
+        <a href="javascript:void(0)" class="numbering__link">01</a>
+        <a href="javascript:void(0)" class="numbering__link">02</a>
+        <a href="javascript:void(0)" class="numbering__link">03</a>
+        <a href="javascript:void(0)" class="numbering__link">04</a>
+      </div>
+    </div>
+    <div class="banner__details">
+      <img src="img/airplane.png" alt="">
+      <p>Free Worldwide Shipping: get free shipping with our Special Service and not redeemable for cash or credit. See Details</p>
+    </div>
+  </section>
+  <!-- banner close -->
+
+  <!-- collection start -->
+  <section class="collection">
+    <div class="container collection--container">
+      <div class="collection__content">
+        <div class="collection__text" data-aos="fade-right" data-aos-duration="600" data-aos-easing="ease-in-out-cubic" data-aos-delay="100">
+          <h2>Collection AW 2019</h2>
+          <p>Cotton textured sweaters <br> from <span>$14.99</span></p><br>
+          <a href="coats.html" class="new__btn new__btn--colltext">
+            Go Shopping
+          </a>
+        </div>
+        <div class="collection__clothes__container" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-out-cubic" data-aos-delay="800">
+          <div class="collection__clothes">
+            <div class="collection__sale">
+              <h3>SALE</h3>
+            </div>
+            <img src="img/collection1.png" alt="">
+            <ul>
+              <li>
+                <a class="collection__link" href="javascript:void(0)">Save</a>
+              </li>
+              <li>
+                <a class="collection__link collection__link--first" href="javascript:void(0)">Quickview</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collection__text2">
+            <h2>Jackets & Coats</h2>
+            <p>Open-front coat</p>
+            <h3>250.00$</h3><span>120.00$</span>
+          </div>
+        </div>
+        <div class="collection__clothes__container" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-out-cubic" data-aos-delay="1000">
+          <div class="collection__clothes">
+            <div class="collection__sale">
+              <h3>SALE</h3>
+            </div>
+            <img src="img/collection2.png" alt="">
+            <ul>
+              <li>
+                <a class="collection__link" href="javascript:void(0)">Save</a>
+              </li>
+              <li>
+                <a class="collection__link collection__link--first" href="javascript:void(0)">Quickview</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collection__text2">
+            <h2>Jumpers & Cardigans</h2>
+            <p>Cable knitted neck sweater</p>
+            <h3>139.00$</h3><span>68.00$</span>
+          </div>
+        </div>
+        <div class="collection__text collection__text--first" data-aos="fade-left" data-aos-duration="600" data-aos-easing="ease-in-out-cubic" data-aos-delay="600">
+          <h2>New Arrival 2019</h2>
+          <p>Soft & cozy sweatshirts <br>from<span>$98.99</span></p><br>
+          <a href="eye.html" class="new__btn new__btn--colltext">
+            Go Shopping
+          </a>
+        </div>
+        <div class="collection__clothes__container" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-out-cubic" data-aos-delay="100">
+          <div class="collection__clothes">
+            <div class="collection__sale">
+              <h3>SALE</h3>
+            </div>
+            <img src="img/collection3.png" alt="">
+            <ul>
+              <li>
+                <a class="collection__link" href="javascript:void(0)">Save</a>
+              </li>
+              <li>
+                <a class="collection__link collection__link--first" href="javascript:void(0)">Quickview</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collection__text2">
+            <h2>Backpacks & accessories</h2>
+            <p>FW 2018 limited edition</p>
+            <h3>250.00$</h3><span>27.00$</span>
+          </div>
+        </div>
+        <div class="collection__clothes__container" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease-in-out-cubic" data-aos-delay="300">
+          <div class="collection__clothes">
+            <div class="collection__sale">
+              <h3>SALE</h3>
+            </div>
+            <img src="img/collection4.png" alt="">
+            <ul>
+              <li>
+                <a class="collection__link" href="javascript:void(0)">Save</a>
+              </li>
+              <li>
+                <a class="collection__link collection__link--first" href="javascript:void(0)">Quickview</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collection__text2">
+            <h2>Shoes & Sneakers</h2>
+            <p>3CE 2019 limited edition</p>
+            <h3>250.00$</h3><span>117.00$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- collection close -->
+
+  <!-- form start -->
+  <section class="form" id="form">
+    <div class="form__box">
+      <h2>Let’s stay in touch</h2>
+      <p class="form__text">Enjoy 15% off your first order when you join our mailing list.</p>
+      <div class="form__mail__container">
+        <input class="form__mail" type="email" placeholder="Enter your email address">
+        <a href="javascript:void(0)" class="form__btn">Subscribe</a>
+      </div>
+      <p class="form__text1">We respect your privacy, so we never share your info.</p>
+    </div>
+  </section>
+  <!-- form close -->
+
+  <!-- crousel start -->
+  <section class="crousel">
+    <div class="fluidcontainer">
+      <div class="crousel__heading">
+        <h2>Share your home with seoulify.</h2>
+        <div class="crousel__follow">
+          <img src="img/insta.png" alt="">
+          <p>Follow @Seoulify_fashion for inspiration.</p>
+        </div>
+      </div>
+      <div class="crousel__wrapper crousel__wrapper--style">
+        <div class="crousel__box">
+          <img src="img/crousel1.png" alt="">
+          <img src="img/crousel4.png" alt="">
+          <img src="img/crousel7.png" alt="">
+          <img src="img/crousel5.png" alt="">
+          <img src="img/crousel2.png" alt="">
+          <img src="img/crousel3.png" alt="">
+          <img src="img/crousel4.png" alt="">
+          <img src="img/crousel1.png" alt="">
+          <img src="img/crousel5.png" alt="">
+          <img src="img/crousel3.png" alt="">
+          <img src="img/crousel6.png" alt="">
+          <img src="img/crousel7.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- crousel close -->
+ 
+  
+  <!-- newproducts start -->
+  <section class="new" id="newproducts">
+    <div class="container">
+      <div class="new__socialicons__container">
+        <ul class="socialicons">
+          <a href="javascript:void(0)" class="socialicons__link">
+            <li class="socialicons__item">
+              <img src="img/insta.png" alt="">
+              <p>Instagram</p>
+            </li>
+          </a>
+          <a href="javascript:void(0)" class="socialicons__link">
+            <li class="socialicons__item">
+              <img src="img/twit.png" alt="">
+              <p>Twitter</p>
+            </li>
+          </a>
+          <a href="javascript:void(0)" class="socialicons__link">
+            <li class="socialicons__item">
+              <img src="img/face.png" alt="">
+              <p>Facebook</p>
+            </li>
+          </a>
+          <a href="javascript:void(0)" class="socialicons__link">
+            <li class="socialicons__item">
+              <img src="img/fours.png" alt="">
+              <p>Foursquare</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="new__products">
+        <div class="new__item new__item--change">
+          <img src="img/new1.png" alt="">
+          <div class="new__text">
+            <h2>SEOUL FASHION</h2>
+            <p>3 Steps To Get That Quick SummerGlow Head To To<span id="points">...</span><span class="hideText" id="moreText"> erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</span></p>
+            <a href="javascript:void(0)" class="new__btn new__btn--newfirst" onclick="readit()" id="textButton">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="new__item new__item--change new__item--one">
+          <img src="img/new2.png" alt="">
+          <div class="new__text new__text--first">
+            <h2>SEOUL FASHION</h2>
+            <p>Seoulify Pro Hijab Goes Global<span id="points1">...</span><span class="hideText" id="moreText1"> New Jersey-native Ibtihaj Muhammad, a Nike athlete and champion fencer, has been carded for false starting many times. “First, I’d get a warning and then a point against me…I can’t tell you how many times that happened,” she says. </span></p>
+            <a href="javascript:void(0)" class="new__btn new__btn--newfirst" onclick="readit1()" id="textButton1">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="new__item new__item--change new__item--two">
+          <img src="img/new3.png" alt="">
+          <div class="new__text">
+            <h2>SEOUL FASHION & SUMMER</h2>
+            <p>3 Steps To Get That Quick SummerGlow Head To To<span id="points2">...</span><span class="hideText" id="moreText2"> erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</span></p>
+            <a href="javascript:void(0)" class="new__btn new__btn--newfirst" onclick="readit2()" id="textButton2">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="new__item new__item--change2 new__item--three">
+          <img src="img/new4.png" alt="">
+          <div class="new__text new__text--second">
+            <h2>SEOUL FASHION</h2>
+            <p>How To Find the Perfect Personal Stylist<span id="points3">...</span><span class="hideText" id="moreText3"> New Jersey-native Ibtihaj Muhammad, a Nike athlete. </span></p>
+            <a href="javascript:void(0)" class="new__btn new__btn--newfirst" onclick="readit3()" id="textButton3">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="new__item new__item--change2 new__item--four">
+          <img src="img/new5.png" alt="">
+          <div class="new__text new__text--second">
+            <h2>SEOUL FASHION</h2>
+            <p>Sego Awards Gala<span id="points4">...</span><span class="hideText" id="moreText4"> The goal of the Sego Awards is to create visibility for female founders & CEOs.. </span></p>
+            <a href="javascript:void(0)" class="new__btn new__btn--newfirst" onclick="readit4()" id="textButton4">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- newproducts close -->
+
+  <div class="scrolltext">
+    <div class="marquee">
+      <div class="track">
+        <div class="content">&nbsp;Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence</div>
+      </div>
+    </div>
+    <div class="marquee1">
+      <div class="track1">
+        <div class="content">&nbsp;Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- feature start -->
+  <section class="feature">
+    <div class="fluidcontainer">
+      <div class="feature__box">
+        <div class="feature__content feature__content--style">
+          <img src="img/store.png" alt="">
+          <h2>Pickup at any Store</h2>
+          <p>Free shipping on orders over $65</p>
+        </div>
+        <div class="feature__content feature__content--style">
+          <img src="img/return.png" alt="">
+          <h2>Free returns</h2>
+          <p>30-days free return policy.</p>
+        </div>
+        <div class="feature__content feature__content--style">
+          <img src="img/lock.png" alt="">
+          <h2>Secured payments</h2>
+          <p>We accept all major credit cards.</p>
+        </div>
+        <div class="feature__content">
+          <img src="img/service.png" alt="">
+          <h2>Customer service</h2>
+          <p>Top notch customer service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- feature close -->
+
+  <!-- footer start -->
+  <section class="footer">
+    <div class="fluidcontainer">
+      <div class="footer__box">
+        <div class="footer__content">
+          <h2>Contact Info</h2>
+          <div class="footer__contact">
+            <P class="footer__phone">Phone:	+4 (509) 120 6705</P>
+            <P>Address:  1418 Riverwood Drive, Suite 3245 Cottonwood, CA 96052, United State</P>
+          </div>
+          <div class="footer__payment">
+            <h3>We accept:</h3>
+            <ul class="payment">
+              <li class="payment__item"><a href="#" class="payment__link"><img src="img/pay1.png" alt=""></a></li>
+              <li class="payment__item"><a href="#" class="payment__link"><img src="img/pay2.png" alt=""></a></li>
+              <li class="payment__item"><a href="#" class="payment__link"><img src="img/pay3.png" alt=""></a></li>
+              <li class="payment__item payment__item--last"><a href="#" class="payment__link"><img src="img/pay4.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h2>Get Help</h2>
+          <div class="footer__menu__container">
+            <ul class="fmenu">
+              <li class="fmenu__item"><a href="#" class="fmenu__link">Delivery Information</a></li>
+              <li class="fmenu__item"><a href="#" class="fmenu__link">Sale Terms & Conditions</a></li>
+              <li class="fmenu__item"><a href="refund.html" class="fmenu__link">Returns & Refunds</a></li>
+              <li class="fmenu__item"><a href="privacypolicy.html" class="fmenu__link">Privacy Policy</a></li>
+              <li class="fmenu__item fmenu__item--last"><a href="#" class="fmenu__link">Shopping FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h2>Popular Categories
+          </h2>
+          <div class="footer__menu__container">
+            <ul class="fmenu">
+              <li class="fmenu__item"><a href="coats.html" class="fmenu__link">Coats (45)</a></li>
+              <li class="fmenu__item"><a href="#" class="fmenu__link">Jeans (278)</a></li>
+              <li class="fmenu__item"><a href="tops.html" class="fmenu__link">Tops (64)</a></li>
+              <li class="fmenu__item"><a href="#" class="fmenu__link">Sweaters (129)</a></li>
+              <li class="fmenu__item fmenu__item--last"><a href="#" class="fmenu__link">Jackets (3)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h2>Let’s stay in touch</h2>
+          <div class="form__mail__container form__mail__container--footer">
+            <input class="form__mail form__mail--footers" type="email" placeholder="Enter your email address">
+            <a href="#" class="form__btn form__btn--fbtns">Subscribe</a>
+          </div>
+          <p>Keep up to date with our latest 
+            news and special offers.</p>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>© 2019, Seoulify Website. Made with passion </p>
+        <p>All Rights Reserved.</p>
+      </div>
+    </div>
+  </section>
+  <a class="scrollUp" id="scrollUp" href="#top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"></path>
+    </svg>
+  </a>
+  <!-- footer close -->
+
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    AOS.init()
+  </script>
+
+  <!-- loader -->
+  <script>
+    $(window).on('load', function () {
+      setTimeout(() => {
+        $('.loaderbox').hide();
+      }, 2000)
+      console.log();
+    }) 
+  </script>
+  <!-- loader close -->
+
+  <!-- Drag scroll -->
+  <script>
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    const slider = document.querySelector('.crousel__box');
+
+    const end = () => {
+      isDown = false;
+      slider.classList.remove('active');
+    }
+
+    const start = (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;	
+    }
+
+    const move = (e) => {
+      if(!isDown) return;
+
+      e.preventDefault();
+      const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+      const dist = (x - startX);
+      slider.scrollLeft = scrollLeft - dist;
+    }
+
+    (() => {
+      slider.addEventListener('mousedown', start);
+      slider.addEventListener('touchstart', start);
+
+      slider.addEventListener('mousemove', move);
+      slider.addEventListener('touchmove', move);
+
+      slider.addEventListener('mouseleave', end);
+      slider.addEventListener('mouseup', end);
+      slider.addEventListener('touchend', end);
+    })();
+  </script>
+  <!-- Drag scroll close -->
+
+  <!-- Read function -->
+  <script>
+    function readit() {
+      var points = document.getElementById("points");
+      var showMoreText = document.getElementById("moreText");
+      var buttonText = document.getElementById("textButton");
+      
+      if (points.style.display === "none") {
+        showMoreText.style.display = "none";
+        points.style.display = "inline";
+        buttonText.innerHTML = "Read More";
+      }
+      else {
+        showMoreText.style.display = "inline";
+        points.style.display = "none";
+        buttonText.innerHTML = "Read Less";
+      }
+    }
+    document.onload(() => readit())
+
+    function readit1() {
+      var points = document.getElementById("points1");
+      var showMoreText = document.getElementById("moreText1");
+      var buttonText = document.getElementById("textButton1");
+
+      if (points.style.display === "none") {
+        showMoreText.style.display = "none";
+        points.style.display = "inline";
+        buttonText.innerHTML = "Read More";
+      }
+      else {
+        showMoreText.style.display = "inline";
+        points.style.display = "none";
+        buttonText.innerHTML = "Read Less";
+      }
+    }
+    document.onload(() => readit1())
+
+    function readit2() {
+      var points = document.getElementById("points2");
+      var showMoreText = document.getElementById("moreText2");
+      var buttonText = document.getElementById("textButton2");
+
+      if (points.style.display === "none") {
+        showMoreText.style.display = "none";
+        points.style.display = "inline";
+        buttonText.innerHTML = "Read More";
+      }
+      else {
+        showMoreText.style.display = "inline";
+        points.style.display = "none";
+        buttonText.innerHTML = "Read Less";
+      }
+    }
+    document.onload(() => readit2())
+
+    function readit3() {
+      var points = document.getElementById("points3");
+      var showMoreText = document.getElementById("moreText3");
+      var buttonText = document.getElementById("textButton3");
+
+      if (points.style.display === "none") {
+        showMoreText.style.display = "none";
+        points.style.display = "inline";
+        buttonText.innerHTML = "Read More";
+      }
+      else {
+        showMoreText.style.display = "inline";
+        points.style.display = "none";
+        buttonText.innerHTML = "Read Less";
+      }
+    }
+    document.onload(() => readit3())
+
+    function readit4() {
+      var points = document.getElementById("points4");
+      var showMoreText = document.getElementById("moreText4");
+      var buttonText = document.getElementById("textButton4");
+
+      if (points.style.display === "none") {
+        showMoreText.style.display = "none";
+        points.style.display = "inline";
+        buttonText.innerHTML = "Read More";
+      }
+      else {
+        showMoreText.style.display = "inline";
+        points.style.display = "none";
+        buttonText.innerHTML = "Read Less";
+      }
+    }
+    document.onload(() => readit4())
+
+  </script>
+  <!-- Read function close -->
+</body>
+</html>

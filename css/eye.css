@@ -1,0 +1,211 @@
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1210px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1025px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 610px;
+  }
+}
+@media screen and (max-width: 586px) {
+  .container {
+    max-width: 400px;
+  }
+}
+.eyeban {
+  padding-bottom: 120px;
+}
+.eyeban__box {
+  display: flex;
+  gap: 90px;
+  flex-direction: column;
+}
+.eyebancontent {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.eyebancontent::before {
+  border: 2px solid #32353c;
+  bottom: 10px;
+  box-shadow: 0 0 0 10px rgb(255 255 255 / 40%);
+  content: "";
+  left: 10px;
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: scale3d(1.4, 1.4, 1);
+  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+.eyebancontent:hover:before {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  filter: drop-shadow(1px 2px 7px black)
+}
+.eyebantext {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-100%, -50%);
+  font-family: 'Montserrat';
+}
+.eyebantext h2 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.eyebantext p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+.eyebantext a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: inline-block;
+  background: #32353c;
+  border-radius: 5px;
+  border: 2px solid #32353c;
+  transition: 0.25s;
+}
+.eyebantext a:hover {
+  color: #32353c;
+  background: rgba(255, 255, 255, 0.6);
+}
+.eyebancontent1 {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.eyebancontent1::before {
+  border: 2px solid #32353c;
+  bottom: 10px;
+  box-shadow: 0 0 0 10px rgb(255 255 255 / 40%);
+  content: "";
+  left: 10px;
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transform: scale3d(1.4, 1.4, 1);
+  transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+.eyebancontent1:hover:before {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  filter: drop-shadow(1px 2px 7px black)
+}
+.eyebantext1 {
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  font-family: 'Montserrat';
+  text-align: center;
+  transform: translateY(-50%);
+}
+.eyebantext1 h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.eyebantext1 p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+.eyebantext1 a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: #32353c;
+  border-radius: 5px;
+  display: inline-block;
+  border: 2px solid #32353c;
+  transition: 0.25s;
+}
+.eyebantext1 a:hover {
+  color: #32353c;
+  background: rgba(255, 255, 255, 0.6);
+}
+.eyeban__box img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 19px 20px 59px -35px #a5a5a5;
+  border-radius: 15px;
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .eyeban__box {
+    gap: 80px;
+  }
+  .eyebantext h2 {
+    font-size: 38px;
+  }
+  .eyebantext p {
+    margin-bottom: 40px;
+  }
+  .eyebantext a {
+    font-size: 18px;
+    padding: 9px 18px;
+  }
+  .eyebantext1 h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  .eyebantext1 p {
+    margin-bottom: 40px;
+  }
+  .eyebantext1 a {
+    font-size: 18px;
+    padding: 9px 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .eyeban__box {
+    gap: 70px;
+  }
+  .eyebantext {
+    transform: translate(-85%, -50%);
+  }
+  .eyebantext h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .eyebantext p {
+    font-size: 19px;
+    margin-bottom: 28px;
+  }
+  .eyebantext a {
+    font-size: 15px;
+    padding: 7px 14px;
+  }
+  .eyebantext1 h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .eyebantext1 p {
+    font-size: 19px;
+    margin-bottom: 28px;
+  }
+  .eyebantext1 a {
+    font-size: 15px;
+    padding: 7px 14px;
+  }
+}

@@ -1,0 +1,50 @@
+.addtocart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3em;
+
+  h2 {
+    color: #32353C;
+    font-size: 22px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @include xx {
+
+    h2 {
+      font-size: 20px
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  
+  @include xx {
+    gap: 2em;
+  }
+
+  @include xl {
+    gap: 1em;
+
+    svg {
+      width: 90%;
+    }
+  }
+
+  @include lg {
+
+    h2 {
+      font-size: 18px
+    }
+
+    svg {
+      width: 80%;
+    }
+  }
+}
+

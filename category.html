@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cat.css">
+  <title>Seoulify</title>
+</head>
+<body>
+  <!-- loader start -->
+  <div class="loaderbox">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- loader close -->
+
+  <!-- header start -->
+  <header class="header">
+    <div class="fluidcontainer">
+      <div class="header__inner">
+        <div class="header__langchange">
+          <div class="header__dropbtn__container">
+            <button class="header__dropbtn">English<img src="img/arrowdown.png" alt=""></button>
+            <div class="header__dropcontent">
+              <a href="javascript:void(0)">Hindi</a>
+              <a href="javascript:void(0)">Spanish</a>
+              <a href="javascript:void(0)">Russian</a>
+            </div>
+          </div>
+          <img class="header__search" src="img/search.png" alt="">
+        </div>
+        <div class="header__menu__container">
+          <ul class="menu">
+            <li class="menu__item"><a href="index.html" class="menu__link menu__link--style">Home</a></li>
+            <li class="menu__item"><a href="category.html" class="menu__link menu__link--style">Category<sup>10</sup></a></li>
+            <li class="menu__item"><a href="#newproducts" class="menu__link menu__link--style">New arrival<sup>44</sup></a></li>
+            <li class="menu__item"><a href="index.html" class="menu__link"><img src="img/logo.png" alt=""></a></li>
+            <li class="menu__item"><a href="tops.html" class="menu__link menu__link--style">Tops<sup>65</sup></a></li>
+            <li class="menu__item"><a href="coats.html" class="menu__link menu__link--style">Coats<sup>28</sup></a></li>
+            <li class="menu__item menu__item--last"><a href="eye.html" class="menu__link menu__link--style">Eyewear<sup>19</sup></a></li>
+          </ul>
+        </div>
+        <div class="addtocart">
+          <a href="javascript:void(0)">
+            <svg addtocart__like xmlns="http://www.w3.org/2000/svg" width="21.949" height="21.105" viewBox="0 0 21.949 21.105">
+              <path id="ios-heart-empty" d="M64.04,56h-.053a6,6,0,0,0-5.012,2.744A6,6,0,0,0,53.962,56h-.053A5.965,5.965,0,0,0,48,61.962a12.843,12.843,0,0,0,2.522,7A44.2,44.2,0,0,0,58.975,77.1a44.2,44.2,0,0,0,8.452-8.141,12.843,12.843,0,0,0,2.522-7A5.965,5.965,0,0,0,64.04,56Zm2.195,12.093a40.469,40.469,0,0,1-7.26,7.155,40.529,40.529,0,0,1-7.26-7.16,11.383,11.383,0,0,1-2.237-6.126,4.477,4.477,0,0,1,4.443-4.48h.047a4.424,4.424,0,0,1,2.169.57,4.61,4.61,0,0,1,1.6,1.5,1.482,1.482,0,0,0,2.48,0,4.656,4.656,0,0,1,1.6-1.5,4.423,4.423,0,0,1,2.169-.57h.047a4.477,4.477,0,0,1,4.443,4.48A11.527,11.527,0,0,1,66.235,68.093Z" transform="translate(-48 -56)"/>
+            </svg>
+          </a>
+          <h2>0.00$</h2>
+          <div class="addtoccart">
+            <div class="cart-icon-top"></div>
+            <div class="cart-icon-bottom"></div>
+          </div>
+        </div>
+      </div> 
+    </div>   
+  </header>
+  <!-- header close -->
+  
+  <!-- banner start -->
+  <section class="banner">
+    <div class="container banner__container">
+      <div class="banner__heading">
+        <h1>CATEGORY</h1>
+        <div class="banner__subheading">
+          <svg class="banner__cloth" xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 100 100" width="100" height="100">
+            <title>football-shirt</title>
+            <defs>
+              <image width="93" height="100" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF0AAABkCAMAAADT2syUAAAAAXNSR0IB2cksfwAAAwBQTFRFAAAAIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gIx8gJpextwAAAQB0Uk5TAAgjX5jU7/n+//z24MJ8NhMBAD6Z7r9qEDLX7NPDt7a8yeL17XUYCZ3fn1tANzEwNDpPb77WSjvpDrmSBCk8lf2u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"/>
+            </defs>
+            <use id="Background" href="#img1" x="2" y="0"/>
+          </svg>
+          <p>THAT WE HANDLE</p>
+        </div>
+      </div>
+      <div class="banner__fullcontent">
+        <div class="banner__cases__container">
+          <ul class="cases">
+            <div class="banner__cases">
+              <a href="javascript:void(0)" class="cases__link" onclick="case1()">
+                <li class="cases__item cases__item--active cases__item--modify">
+                  <p>ACCESSORIES</p>
+                  <svg class="cases__plus" xmlns="http://www.w3.org/2000/svg" width="37" height="42" viewBox="0 0 37 42">
+                    <text id="_" data-name="+ " transform="translate(22 33)" fill="#f7f7f7" font-size="34" font-family="Montserrat-Regular, Montserrat"><tspan x="-14.229" y="0">+ </tspan></text>
+                    <g id="Path_521" data-name="Path 521" transform="translate(0 3)" fill="none" opacity="0.365">
+                      <path d="M17.5,0A17.5,17.5,0,1,1,0,17.5,17.5,17.5,0,0,1,17.5,0Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                  <svg class="cases__sub banner__sub--style" xmlns="http://www.w3.org/2000/svg" width="35" height="46" viewBox="0 0 35 46">
+                    <text id="_-" data-name="-" transform="translate(18 37)" fill="#f7f7f7" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="-6.798" y="0">-</tspan></text>
+                    <g id="Path_523" data-name="Path 523" transform="translate(0 8)" fill="#fff" opacity="0.365">
+                      <path d="M 17.5 34 C 13.09269046783447 34 8.949179649353027 32.28369903564453 5.83273983001709 29.16725921630859 C 2.716300010681152 26.05081939697266 1 21.90731048583984 1 17.5 C 1 13.09269046783447 2.716300010681152 8.949179649353027 5.83273983001709 5.83273983001709 C 8.949179649353027 2.716300010681152 13.09269046783447 1 17.5 1 C 21.90731048583984 1 26.05081939697266 2.716300010681152 29.16725921630859 5.83273983001709 C 32.28369903564453 8.949179649353027 34 13.09269046783447 34 17.5 C 34 21.90731048583984 32.28369903564453 26.05081939697266 29.16725921630859 29.16725921630859 C 26.05081939697266 32.28369903564453 21.90731048583984 34 17.5 34 Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                </li>
+              </a>
+              <div class="banner__content2"  id="accidents">
+                <div class="banner__conheading">
+                  <h2>ACCESSORIES</h2>
+                  <h3>OUR STOCK FOR ACCESSORIES</h3>
+                </div>
+                <div class="banner__fulltext2">
+                  <img src="./img/accessories.png" alt="">
+                  <div class="banner__injury">
+                    <p class="baner__text">Our Philadelphia auto accident attorney team is prepared to do whatever it takes to help you get fair compensation after an auto accident help you get fair compensation after an auto accident.  Being in a car accident is an unexpected event that can throw your life into </p>
+                    <p class="baner__text2">disarray especially if you are suffering from an injury suffering from an to a helpful injury due to another person’s mistake.When you’re hurt in a car accident, you need an aggressive.</p>
+                  </div>
+                </div>
+                <ul class="btns">
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--style" href="javascript:void(0)">Learn More</a>
+                  </li>
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--first btns__link--style" href="javascript:void(0)">Free Evaluation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="banner__cases">
+              <a href="javascript:void(0)" class="cases__link" onclick="case2()">
+                <li class="cases__item cases__item--active cases__item--modify">
+                  <p>HANDBAGS</p>
+                  <svg class="cases__plus" xmlns="http://www.w3.org/2000/svg" width="37" height="42" viewBox="0 0 37 42">
+                    <text id="_" data-name="+ " transform="translate(22 33)" fill="#f7f7f7" font-size="34" font-family="Montserrat-Regular, Montserrat"><tspan x="-14.229" y="0">+ </tspan></text>
+                    <g id="Path_521" data-name="Path 521" transform="translate(0 3)" fill="none" opacity="0.365">
+                      <path d="M17.5,0A17.5,17.5,0,1,1,0,17.5,17.5,17.5,0,0,1,17.5,0Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                  <svg class="cases__sub banner__sub--style" xmlns="http://www.w3.org/2000/svg" width="35" height="46" viewBox="0 0 35 46">
+                    <text id="_-" data-name="-" transform="translate(18 37)" fill="#f7f7f7" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="-6.798" y="0">-</tspan></text>
+                    <g id="Path_523" data-name="Path 523" transform="translate(0 8)" fill="#fff" opacity="0.365">
+                      <path d="M 17.5 34 C 13.09269046783447 34 8.949179649353027 32.28369903564453 5.83273983001709 29.16725921630859 C 2.716300010681152 26.05081939697266 1 21.90731048583984 1 17.5 C 1 13.09269046783447 2.716300010681152 8.949179649353027 5.83273983001709 5.83273983001709 C 8.949179649353027 2.716300010681152 13.09269046783447 1 17.5 1 C 21.90731048583984 1 26.05081939697266 2.716300010681152 29.16725921630859 5.83273983001709 C 32.28369903564453 8.949179649353027 34 13.09269046783447 34 17.5 C 34 21.90731048583984 32.28369903564453 26.05081939697266 29.16725921630859 29.16725921630859 C 26.05081939697266 32.28369903564453 21.90731048583984 34 17.5 34 Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                </li>
+              </a>
+              <div class="banner__content2"  id="slip">
+                <div class="banner__conheading">
+                  <h2>HANDBAGS</h2>
+                  <h3>OUR STOCK FOR HAND BAGS</h3>
+                </div>
+                <div class="banner__fulltext2">
+                  <img src="./img/handbags.jpg" alt="">
+                  <div class="banner__injury">
+                    <p class="baner__text">Our Philadelphia slip & falls attorneys help deserving victims recover compensation when they’re hurt because of slip and fall accidents. We have helped clients recover millions of dollars for their accident damages. </p>
+                    <p class="baner__text2">When you’re hurt because falls attorneys suffering from an injury suffering from an to a helpful injury  help deserving victims recover compensation when of a slip and fall accident, clients recover millions of dollars for their accident we can help you bring a legal claim and fight for fair compensation. </p>
+                  </div>
+                </div>
+                <ul class="btns">
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--style" href="javascript:void(0)">Learn More</a>
+                  </li>
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--first btns__link--style" href="javascript:void(0)">Free Evaluation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="banner__cases">
+              <a href="javascript:void(0)" class="cases__link" onclick="case3()">
+                <li class="cases__item cases__item--active cases__item--modify">
+                  <p>SHOES</p>
+                  <svg class="cases__plus" xmlns="http://www.w3.org/2000/svg" width="37" height="42" viewBox="0 0 37 42">
+                    <text id="_" data-name="+ " transform="translate(22 33)" fill="#f7f7f7" font-size="34" font-family="Montserrat-Regular, Montserrat"><tspan x="-14.229" y="0">+ </tspan></text>
+                    <g id="Path_521" data-name="Path 521" transform="translate(0 3)" fill="none" opacity="0.365">
+                      <path d="M17.5,0A17.5,17.5,0,1,1,0,17.5,17.5,17.5,0,0,1,17.5,0Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                  <svg class="cases__sub banner__sub--style" xmlns="http://www.w3.org/2000/svg" width="35" height="46" viewBox="0 0 35 46">
+                    <text id="_-" data-name="-" transform="translate(18 37)" fill="#f7f7f7" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="-6.798" y="0">-</tspan></text>
+                    <g id="Path_523" data-name="Path 523" transform="translate(0 8)" fill="#fff" opacity="0.365">
+                      <path d="M 17.5 34 C 13.09269046783447 34 8.949179649353027 32.28369903564453 5.83273983001709 29.16725921630859 C 2.716300010681152 26.05081939697266 1 21.90731048583984 1 17.5 C 1 13.09269046783447 2.716300010681152 8.949179649353027 5.83273983001709 5.83273983001709 C 8.949179649353027 2.716300010681152 13.09269046783447 1 17.5 1 C 21.90731048583984 1 26.05081939697266 2.716300010681152 29.16725921630859 5.83273983001709 C 32.28369903564453 8.949179649353027 34 13.09269046783447 34 17.5 C 34 21.90731048583984 32.28369903564453 26.05081939697266 29.16725921630859 29.16725921630859 C 26.05081939697266 32.28369903564453 21.90731048583984 34 17.5 34 Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                </li>
+              </a>
+              <div class="banner__content2"  id="products">
+                <div class="banner__conheading">
+                  <h2>SHOES</h2>
+                  <h3>OUR STOCK FOR SHOES</h3>
+                </div>
+                <div class="banner__fulltext2">
+                  <img src="./img/shoes.png" alt="">
+                  <div class="banner__injury">
+                    <p class="baner__text">If you’re hurt because of a dangerous product, Pennsylvania law may give you the right to bring a claim for compensation. An injury that occurs because of a defective product can seriously interrupt your life. </p>
+                    <p class="baner__text2">Our law firm can help you bring your claim and fight aggressively for the compensation that you deserve.  Pennsylvania law may give you the right to bring a claim for compensation. Our law firm can help you bring your claim and fight aggressively for the compensation</p>
+                  </div>
+                </div>
+                <ul class="btns">
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--style" href="javascript:void(0)">Learn More</a>
+                  </li>
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--first btns__link--style" href="javascript:void(0)">Free Evaluation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="banner__cases">
+              <a href="javascript:void(0)" class="cases__link" onclick="case4()">
+                <li class="cases__item cases__item--active cases__item--modify">
+                  <p>SHIRTS</p>
+                  <svg class="cases__plus" xmlns="http://www.w3.org/2000/svg" width="37" height="42" viewBox="0 0 37 42">
+                    <text id="_" data-name="+ " transform="translate(22 33)" fill="#f7f7f7" font-size="34" font-family="Montserrat-Regular, Montserrat"><tspan x="-14.229" y="0">+ </tspan></text>
+                    <g id="Path_521" data-name="Path 521" transform="translate(0 3)" fill="none" opacity="0.365">
+                      <path d="M17.5,0A17.5,17.5,0,1,1,0,17.5,17.5,17.5,0,0,1,17.5,0Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                  <svg class="cases__sub banner__sub--style" xmlns="http://www.w3.org/2000/svg" width="35" height="46" viewBox="0 0 35 46">
+                    <text id="_-" data-name="-" transform="translate(18 37)" fill="#f7f7f7" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="-6.798" y="0">-</tspan></text>
+                    <g id="Path_523" data-name="Path 523" transform="translate(0 8)" fill="#fff" opacity="0.365">
+                      <path d="M 17.5 34 C 13.09269046783447 34 8.949179649353027 32.28369903564453 5.83273983001709 29.16725921630859 C 2.716300010681152 26.05081939697266 1 21.90731048583984 1 17.5 C 1 13.09269046783447 2.716300010681152 8.949179649353027 5.83273983001709 5.83273983001709 C 8.949179649353027 2.716300010681152 13.09269046783447 1 17.5 1 C 21.90731048583984 1 26.05081939697266 2.716300010681152 29.16725921630859 5.83273983001709 C 32.28369903564453 8.949179649353027 34 13.09269046783447 34 17.5 C 34 21.90731048583984 32.28369903564453 26.05081939697266 29.16725921630859 29.16725921630859 C 26.05081939697266 32.28369903564453 21.90731048583984 34 17.5 34 Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                </li>
+              </a>
+              <div class="banner__content2"  id="medical">
+                <div class="banner__conheading">
+                  <h2>SHIRTS</h2>
+                  <h3>OUR STOCK FOR SHIRTS</h3>
+                </div>
+                <div class="banner__fulltext2">
+                  <img src="./img/shirts.png" alt="">
+                  <div class="banner__injury">
+                    <p class="baner__text">If you’re the victim of negligent care from a doctor, healthcare facility or other medical professional, you’re the victim of negligent care we can help.Suffering from negligent health care, the results may be catastrophic for you or your loved one.Lost income from work and extensive. </p>
+                    <p class="baner__text2">Suffering from negligent health care, the results may be catastrophic for you or your loved one.Not only can the injuries be severe, but the financial toll for you and your family may be devastating as well. Lost income from work and extensive. </p>
+                  </div>
+                </div>
+                <ul class="btns">
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--style" href="javascript:void(0)">Learn More</a>
+                  </li>
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--first btns__link--style" href="javascript:void(0)">Free Evaluation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="banner__cases">
+              <a href="javascript:void(0)" class="cases__link" onclick="case5()">
+                <li class="cases__item cases__item--active cases__item--modify">
+                  <p>JEANS</p>
+                  <svg class="cases__plus" xmlns="http://www.w3.org/2000/svg" width="37" height="42" viewBox="0 0 37 42">
+                    <text id="_" data-name="+ " transform="translate(22 33)" fill="#f7f7f7" font-size="34" font-family="Montserrat-Regular, Montserrat"><tspan x="-14.229" y="0">+ </tspan></text>
+                    <g id="Path_521" data-name="Path 521" transform="translate(0 3)" fill="none" opacity="0.365">
+                      <path d="M17.5,0A17.5,17.5,0,1,1,0,17.5,17.5,17.5,0,0,1,17.5,0Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                  <svg class="cases__sub banner__sub--style" xmlns="http://www.w3.org/2000/svg" width="35" height="46" viewBox="0 0 35 46">
+                    <text id="_-" data-name="-" transform="translate(18 37)" fill="#f7f7f7" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="-6.798" y="0">-</tspan></text>
+                    <g id="Path_523" data-name="Path 523" transform="translate(0 8)" fill="#fff" opacity="0.365">
+                      <path d="M 17.5 34 C 13.09269046783447 34 8.949179649353027 32.28369903564453 5.83273983001709 29.16725921630859 C 2.716300010681152 26.05081939697266 1 21.90731048583984 1 17.5 C 1 13.09269046783447 2.716300010681152 8.949179649353027 5.83273983001709 5.83273983001709 C 8.949179649353027 2.716300010681152 13.09269046783447 1 17.5 1 C 21.90731048583984 1 26.05081939697266 2.716300010681152 29.16725921630859 5.83273983001709 C 32.28369903564453 8.949179649353027 34 13.09269046783447 34 17.5 C 34 21.90731048583984 32.28369903564453 26.05081939697266 29.16725921630859 29.16725921630859 C 26.05081939697266 32.28369903564453 21.90731048583984 34 17.5 34 Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                </li>
+              </a>
+              <div class="banner__content2"  id="construction">
+                <div class="banner__conheading">
+                  <h2>JEANS</h2>
+                  <h3>OUR STOCK FOR JEANS</h3>
+                </div>
+                <div class="banner__fulltext2">
+                  <img src="./img/jeans.jpg" alt="">
+                  <div class="banner__injury">
+                    <p class="baner__text">According to the U.S. Department of Labor, more than 20 percent of all deaths that occur in private-industry workplaces occur in the construction industry. Falls, object strikes, electrocutions and trapped workers account for 59.9 percent. </p>
+                    <p class="baner__text2">If you’re the victim of a construction accident, it can be hard to know where to begin to pick up the pieces and put your life back together. workplaces occur in the construction industry. Falls, object strikes, electrocutions and trapped workers account for 59.9 percent.</p>
+                  </div>
+                </div>
+                <ul class="btns">
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--style" href="javascript:void(0)">Learn More</a>
+                  </li>
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--first btns__link--style" href="javascript:void(0)">Free Evaluation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="banner__cases">
+              <a href="javascript:void(0)" class="cases__link" onclick="case6()">
+                <li class="cases__item cases__item--modify">
+                  <p>TOPS</p>
+                  <svg class="cases__plus" xmlns="http://www.w3.org/2000/svg" width="37" height="42" viewBox="0 0 37 42">
+                    <text id="_" data-name="+ " transform="translate(22 33)" fill="#f7f7f7" font-size="34" font-family="Montserrat-Regular, Montserrat"><tspan x="-14.229" y="0">+ </tspan></text>
+                    <g id="Path_521" data-name="Path 521" transform="translate(0 3)" fill="none" opacity="0.365">
+                      <path d="M17.5,0A17.5,17.5,0,1,1,0,17.5,17.5,17.5,0,0,1,17.5,0Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                  <svg class="cases__sub banner__sub--style" xmlns="http://www.w3.org/2000/svg" width="35" height="46" viewBox="0 0 35 46">
+                    <text id="_-" data-name="-" transform="translate(18 37)" fill="#f7f7f7" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="-6.798" y="0">-</tspan></text>
+                    <g id="Path_523" data-name="Path 523" transform="translate(0 8)" fill="#fff" opacity="0.365">
+                      <path d="M 17.5 34 C 13.09269046783447 34 8.949179649353027 32.28369903564453 5.83273983001709 29.16725921630859 C 2.716300010681152 26.05081939697266 1 21.90731048583984 1 17.5 C 1 13.09269046783447 2.716300010681152 8.949179649353027 5.83273983001709 5.83273983001709 C 8.949179649353027 2.716300010681152 13.09269046783447 1 17.5 1 C 21.90731048583984 1 26.05081939697266 2.716300010681152 29.16725921630859 5.83273983001709 C 32.28369903564453 8.949179649353027 34 13.09269046783447 34 17.5 C 34 21.90731048583984 32.28369903564453 26.05081939697266 29.16725921630859 29.16725921630859 C 26.05081939697266 32.28369903564453 21.90731048583984 34 17.5 34 Z" stroke="none"/>
+                      <path d="M 17.5 2 C 13.35980033874512 2 9.467409133911133 3.612279891967773 6.539850234985352 6.539850234985352 C 3.612279891967773 9.467409133911133 2 13.35980033874512 2 17.5 C 2 21.64019966125488 3.612279891967773 25.53258895874023 6.539850234985352 28.46014976501465 C 9.467409133911133 31.38772010803223 13.35980033874512 33 17.5 33 C 21.64019966125488 33 25.53258895874023 31.38772010803223 28.46014976501465 28.46014976501465 C 31.38772010803223 25.53258895874023 33 21.64019966125488 33 17.5 C 33 13.35980033874512 31.38772010803223 9.467409133911133 28.46014976501465 6.539850234985352 C 25.53258895874023 3.612279891967773 21.64019966125488 2 17.5 2 M 17.5 0 C 27.16497993469238 0 35 7.835020065307617 35 17.5 C 35 27.16497993469238 27.16497993469238 35 17.5 35 C 7.835020065307617 35 0 27.16497993469238 0 17.5 C 0 7.835020065307617 7.835020065307617 0 17.5 0 Z" stroke="none" fill="#fff"/>
+                    </g>
+                  </svg>
+                </li>
+              </a>
+              <div class="banner__content2"  id="injury">
+                <div class="banner__conheading">
+                  <h2>TOPS</h2>
+                  <h3>OUR STOCK FOR TOPS</h3>
+                </div>
+                <div class="banner__fulltext2">
+                  <img src="./img/crousel5.png" alt="">
+                  <div class="banner__injury">
+                    <p class="baner__text">Each year, the personal injury professionals at ABC Law Firm collect millions of dollars for our clients. Our success is based on hard work, attention to detail and the rkplaces occur in the construction industry. Falls, object strikes, electrocutions and trapped workers account for 59.9 percent. </p>
+                    <p class="baner__text2">and the highest of expectations. Since 1984, we’ve built our practice on  and the highest of expectations.the foundations of legal excellence and the pursuit of justice for each client. We listen. We fight. We expect results.  </p>
+                  </div>
+                </div>
+                <ul class="btns">
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--style" href="javascript:void(0)">Learn More</a>
+                  </li>
+                  <li class="btns__item">
+                    <a class="btns__link btns__link--first btns__link--style" href="javascript:void(0)">Free Evaluation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner close -->
+
+  <!-- footer start -->
+  <section class="footer">
+    <div class="fluidcontainer">
+      <div class="footer__box">
+        <div class="footer__content">
+          <h2>Contact Info</h2>
+          <div class="footer__contact">
+            <P class="footer__phone">Phone:	+4 (509) 120 6705</P>
+            <P>Address:  1418 Riverwood Drive, Suite 3245 Cottonwood, CA 96052, United State</P>
+          </div>
+          <div class="footer__payment">
+            <h3>We accept:</h3>
+            <ul class="payment">
+              <li class="payment__item"><a href="#" class="payment__link"><img src="img/pay1.png" alt=""></a></li>
+              <li class="payment__item"><a href="#" class="payment__link"><img src="img/pay2.png" alt=""></a></li>
+              <li class="payment__item"><a href="#" class="payment__link"><img src="img/pay3.png" alt=""></a></li>
+              <li class="payment__item payment__item--last"><a href="#" class="payment__link"><img src="img/pay4.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h2>Get Help</h2>
+          <div class="footer__menu__container">
+            <ul class="fmenu">
+              <li class="fmenu__item"><a href="#" class="fmenu__link">Delivery Information</a></li>
+              <li class="fmenu__item"><a href="#" class="fmenu__link">Sale Terms & Conditions</a></li>
+              <li class="fmenu__item"><a href="refund.html" class="fmenu__link">Returns & Refunds</a></li>
+              <li class="fmenu__item"><a href="privacypolicy.html" class="fmenu__link">Privacy Policy</a></li>
+              <li class="fmenu__item fmenu__item--last"><a href="#" class="fmenu__link">Shopping FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h2>Popular Categories
+          </h2>
+          <div class="footer__menu__container">
+            <ul class="fmenu">
+              <li class="fmenu__item"><a href="coats.html" class="fmenu__link">Coats (45)</a></li>
+              <li class="fmenu__item"><a href="#" class="fmenu__link">Jeans (278)</a></li>
+              <li class="fmenu__item"><a href="tops.html" class="fmenu__link">Tops (64)</a></li>
+              <li class="fmenu__item"><a href="#" class="fmenu__link">Sweaters (129)</a></li>
+              <li class="fmenu__item fmenu__item--last"><a href="#" class="fmenu__link">Jackets (3)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h2>Let’s stay in touch</h2>
+          <div class="form__mail__container form__mail__container--footer">
+            <input class="form__mail form__mail--footers" type="email" placeholder="Enter your email address">
+            <a href="#" class="form__btn form__btn--fbtns">Subscribe</a>
+          </div>
+          <p>Keep up to date with our latest 
+            news and special offers.</p>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>© 2019, Seoulify Website. Made with passion </p>
+        <p>All Rights Reserved.</p>
+      </div>
+    </div>
+  </section>
+  <a class="scrollUp" id="scrollUp" href="#top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"></path>
+    </svg>
+  </a>
+  <!-- footer close -->
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- loader -->
+  <script>
+    $(window).on('load', function () {
+      setTimeout(() => {
+        $('.loaderbox').hide();
+      }, 2000)
+      console.log();
+    }) 
+  </script>
+  <!-- loader close -->
+
+  <!-- Text change function -->
+  <script>
+
+    function case1() {
+      document.getElementById("accidents").style.display ="block";
+      document.getElementById("slip").style.display ="none";
+      document.getElementById("products").style.display ="none";
+      document.getElementById("medical").style.display ="none";
+      document.getElementById("construction").style.display ="none";
+      document.getElementById("injury").style.display ="none";
+    }
+
+    function case2() {
+      document.getElementById("slip").style.display ="block";
+      document.getElementById("products").style.display ="none";
+      document.getElementById("medical").style.display ="none";
+      document.getElementById("construction").style.display ="none";
+      document.getElementById("injury").style.display ="none";
+      document.getElementById("accidents").style.display ="none";
+    }
+
+    function case3() {
+      document.getElementById("products").style.display ="block";
+      document.getElementById("medical").style.display ="none";
+      document.getElementById("construction").style.display ="none";
+      document.getElementById("injury").style.display ="none";
+      document.getElementById("accidents").style.display ="none";
+      document.getElementById("slip").style.display ="none";
+    }
+    
+    function case4() {
+      document.getElementById("medical").style.display ="block";
+      document.getElementById("construction").style.display ="none";
+      document.getElementById("injury").style.display ="none";
+      document.getElementById("accidents").style.display ="none";
+      document.getElementById("slip").style.display ="none";
+      document.getElementById("products").style.display ="none";
+    }
+
+    function case5() {
+      document.getElementById("construction").style.display ="block";
+      document.getElementById("injury").style.display ="none";
+      document.getElementById("accidents").style.display ="none";
+      document.getElementById("slip").style.display ="none";
+      document.getElementById("products").style.display ="none";
+      document.getElementById("medical").style.display ="none";
+    }
+
+    function case6() {
+      document.getElementById("injury").style.display ="block";
+      document.getElementById("accidents").style.display ="none";
+      document.getElementById("slip").style.display ="none";
+      document.getElementById("construction").style.display ="none";
+      document.getElementById("products").style.display ="none";
+      document.getElementById("medical").style.display ="none";
+    }
+
+  </script>
+  <!-- Text change function close -->
+</body>
+</html>
